@@ -1,0 +1,141 @@
+score_true_try: int = 0
+score_false_try: int = 0
+#1
+captcha_text = 'Какая версия языка сейчас актуальна?'
+expected_result = 'Python3'
+while True:
+    user_answer = input('Какая версия языка сейчас актуальна?: '.format(captcha_text))
+    if user_answer.title() == expected_result:
+        print('Ответ {Python3} верен')
+        score_true_try += 1
+        break
+    else:
+        print('Неверный ответ.')
+        score_false_try += 1
+#2
+captcha_text = 'Какая кодировка используется в строках?'
+expected_result = 'UTF8'
+while True:
+   user_answer = input('{0}: '.format(captcha_text))
+   if user_answer.upper() == expected_result:
+       print('Ответ {UTF8} верен')
+       score_true_try += 1
+       break
+   else:
+       print('Неверный ответ.')
+       score_false_try += 1
+#3
+captcha_text = 'Сколько значений есть у bool?'
+expected_result = 2
+while True:
+   user_answer = input('{0}: '.format(captcha_text))
+   if int(user_answer) == expected_result:
+       print('Ответ {2} верен')
+       score_true_try += 1
+       break
+   else:
+       print('Неверный ответ.')
+       score_false_try += 1
+#4
+captcha_text = 'Сколько бит содержится в одном байте?'
+expected_result = 8
+while True:
+   user_answer = input('{0}: '.format(captcha_text))
+   if int(user_answer) == expected_result:
+       print('Ответ {8} верен')
+       score_true_try += 1
+       break
+   else:
+       print('Неверный ответ.')
+       score_false_try += 1
+ #5
+captcha_text = 'Какой тип данных конвертирует дробные числа в целые?'
+expected_result = 'int'
+while True:
+   user_answer = input('{0}: '.format(captcha_text))
+   if user_answer == expected_result:
+       print('Ответ {int} верен')
+       score_true_try += 1
+       break
+   else:
+       print('Неверный ответ.')
+       score_false_try += 1
+#6
+captcha_text = 'Объекты, имеющие тип данных bool, принимают значение True or ... '
+expected_result = 'False'
+while True:
+   user_answer = input('{0}: '.format(captcha_text))
+   if user_answer.title() == expected_result:
+       print('Ответ {False} верен')
+       score_true_try += 1
+       break
+   else:
+       print('Неверный ответ.')
+       score_false_try += 1
+#7
+captcha_text = 'Какой символ используется в Python для создания комментириев?'
+expected_result = '#'
+while True:
+   user_answer = input('{0}: '.format(captcha_text))
+   if user_answer == expected_result:
+       print('Ответ {#} верен')
+       score_true_try += 1
+       break
+   else:
+       print('Неверный ответ.')
+       score_false_try += 1
+#8
+captcha_text = 'Какой тип данных конвертирует целое число в дробное?'
+expected_result = 'float'
+while True:
+   user_answer = input('{0}: '.format(captcha_text))
+   if user_answer == expected_result:
+       print('Ответ {float} верен')
+       score_true_try += 1
+       break
+   else:
+       print('Неверный ответ.')
+       score_false_try += 1
+#9
+captcha_text = 'Как называется соединение двух строк в единую строку?'
+expected_result = 'Конкатенация'
+while True:
+   user_answer = input('{0}: '.format(captcha_text))
+   if user_answer.title() == expected_result:
+       print('Ответ {Конкатенация} верен')
+       score_true_try += 1
+       break
+   else:
+       print('Неверный ответ.')
+       score_false_try += 1
+#10
+captcha_text = 'Какое значение имеют объекты с типом данных NoneType?'
+expected_result = 'None'
+while True:
+   user_answer = input('{0}: '.format(captcha_text))
+   if user_answer.title() == expected_result:
+       print('Ответ {None} верен')
+       score_true_try += 1
+       break
+   else:
+       print('Неверный ответ.')
+       score_false_try += 1
+
+print(f'Ваш результат {score_true_try} попыток')
+print(f'Ваш результат {score_false_try} попыток')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
